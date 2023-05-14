@@ -168,7 +168,7 @@
 
             </div>
 
-            <a href="#" id="Adv-show" class="show-more">
+            <a  id="Adv-show" class="show-more">
                 <span>Ko'proq</span>
                 <img src="images/icons/icon-arrow.svg" alt="arrow">
             </a>
@@ -209,7 +209,7 @@
                 <div class="workplace__box">
                     <img src="images/svg/logo-humo.svg" alt="Humo">
                 </div>
-                <div class="worklaplace__box">
+                <div class="workplace__box">
                     <img src="images/svg/logo-agrobank.svg" alt="Agrobank">
                 </div>
                 <div class="workplace__box">
@@ -251,7 +251,7 @@
                 <div class="workplace__box">
                     <img src="images/svg/yoshlar-ishlari.svg" alt="yoshlar-ishlari">
                 </div>
-                <div class="worklaplace__box">
+                <div class="workplace__box">
                     <img src="images/svg/pcg-active.svg" alt="PCG">
                 </div>
             </div>
@@ -320,6 +320,30 @@
         </section>
     </div>
     <script type="module" src="./main.js"></script>
+    <script>
+      let myElements = document.querySelectorAll(".rests");
+let myButton = document.getElementById("Adv-show");
+
+myButton.addEventListener("click", function () {
+  myElements.forEach(function (element) {
+    element.classList.toggle("hidden");
+  });
+  myButton.innerHTML = "Qisqartirish";
+});
+
+function myFunction(){ 
+  var playVideo = document.getElementById('myVideo');
+  var button = document.getElementById('myBtn');
+
+  if (playVideo.paused) {
+     playVideo.play();
+      button.innerHTML= "pause";
+  } else {
+     button.innerHTML= "play";
+     playVideo.pause();
+  }
+  };
+    </script>
 </body>
 
 </html>
