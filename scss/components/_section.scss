@@ -48,7 +48,7 @@ a {
 
     .advantages {
         padding: 48px 0;
-        
+
 
         h2 {
             margin-bottom: 48px;
@@ -100,16 +100,18 @@ a {
                 letter-spacing: -0.28px;
             }
         }
-       
-        .show-more{
+
+        .show-more {
             display: flex;
             align-items: center;
             gap: 17px;
-            img{
+
+            img {
                 width: 21px;
                 height: 21px;
             }
-            img:hover{
+
+            img:hover {
                 border: 1px solid rgb(209, 121, 50);
                 border-radius: 50%;
             }
@@ -135,7 +137,8 @@ a {
             border-radius: 4px;
             transition-delay: 1s;
             transition: 3s all;
-            &:hover{
+
+            &:hover {
                 background: hsl(0, 0%, 100%);
                 border: none;
                 box-shadow: 0 0 5px #F9F8F7;
