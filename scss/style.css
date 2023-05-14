@@ -479,6 +479,7 @@ a {
 }
 .sect .cources {
   padding: 48px 0;
+  background: #F9F8F7;
 }
 .sect .cources__wrapper {
   display: flex;

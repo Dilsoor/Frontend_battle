@@ -121,6 +121,9 @@ a {
 
     .cources {
         padding: 48px 0;
+        background: #F9F8F7;
+        ;
+
 
         &__wrapper {
             display: flex;
@@ -135,7 +138,8 @@ a {
             border-radius: 4px;
             transition-delay: 0.5s;
             transition: 2s all;
-            h5{
+
+            h5 {
                 margin-bottom: 13px;
             }
 
@@ -186,10 +190,12 @@ a {
             padding: 16px 12px;
             background: #F9F8F7;
             border-radius: 8px;
-            img{
+
+            img {
                 filter: grayscale(1);
             }
-            &:hover img{
+
+            &:hover img {
                 filter: none;
             }
         }
