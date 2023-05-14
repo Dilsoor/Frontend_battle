@@ -1,83 +1,90 @@
-$bg-main-color: #F1F0EE;
-$bg-secondary-color: #F9F8F7;
-$text-color:  #0EB182;
+$bg-main-color: #f1f0ee;
+$bg-secondary-color: #f9f8f7;
+$text-color: #0eb182;
 $secondary-color: #fff;
-$tab-color: #F7F7F5;
-$label-color: #4E4E4E;
+$tab-color: #f7f7f5;
+$label-color: #4e4e4e;
 $input-color: rgba(14, 16, 20, 0.9);
-$btn-color:#BA8D5B  ;
-$footer-text:#607987;
+$btn-color: #ba8d5b;
+$footer-text: #607987;
 $nav-color: rgba(23, 25, 29, 0.7);
-$green:#7CD1AC;
+$green: #7cd1ac;
 $form-drink-bg: rgba(83, 83, 83, 0.1);
 $form-drink-shedow: rgba(241, 216, 253, 0.08);
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+  font-family: "Lato", sans-serif;
+}
 
-body.light{
-   
-    *{
-        color: #000 !important;
-
+body.light {
+  * {
+    color: #000 !important;
+  }
+  .navbar {
+    background: rgba(23, 25, 29, 0.1) !important;
+    &-brand {
+      img {
+        content: url("../../images/navbar/dark-logo.svg");
+      }
     }
-    .navbar{
-        background: rgba(23, 25, 29, 0.1) !important;
-        &-brand{
-            img{
-                content: url('../../images/navbar/dark-logo.svg');
-            }
-        }
-        &-link{
-            &:hover{
-                color: #6911AD !important;
-            }
-        }
-        &__right{
-            &-mode{
-            background-color: #fff;
-            .mode-btn.active{
-            i{
-                color: #fff !important;
-            }
-            }
-        }
-        &-call{
+    &-link {
+      &:hover {
+        color: #6911ad !important;
+      }
+    }
+    &__right {
+      &-mode {
+        background-color: #fff;
+        .mode-btn.active {
+          i {
             color: #fff !important;
-            &:hover{
-                color: #6911AD !important;
-            }
-        }}
-    }
-    .navbar-shrink{
-        background-color: rgba(0, 0, 0,0.3) !important;
-    }
-    @media (max-width:1200px){
-        .navbar{
-            .offcanvas{
-                background: rgba(243, 243, 243, 0.5) !important;
-            }
+          }
         }
+      }
+      &-call {
+        color: #fff !important;
+        &:hover {
+          color: #6911ad !important;
+        }
+      }
     }
-    .card{
+  }
+  .navbar-shrink {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+  }
+  @media (max-width: 1200px) {
+    .navbar {
+      .offcanvas {
         background: rgba(243, 243, 243, 0.5) !important;
-        &-content{
-            background: rgba(255,255,255, 0.9) !important;
-        }
+      }
     }
-    .services{
-        &__container{
-            background-color:rgba(243, 243, 243, 0.5) !important;
-        }
+  }
+  .card {
+    background: rgba(243, 243, 243, 0.5) !important;
+    &-content {
+      background: rgba(255, 255, 255, 0.9) !important;
     }
-    .form,.footer{
-        background: rgba(255,255,255, 0.9) !important;
+  }
+  .services {
+    &__container {
+      background-color: rgba(243, 243, 243, 0.5) !important;
     }
-    .footer{
-        &__logo{
-            img{
-                content: url('../../images/footer/footer-dark.svg');
-            }
-        }
+  }
+  .form,
+  .footer {
+    background: rgba(255, 255, 255, 0.9) !important;
+  }
+  .footer {
+    &__logo {
+      img {
+        content: url("../../images/footer/footer-dark.svg");
+      }
     }
+  }
 
-    background:url('../../images/home/bg-light.png'),rgba(255, 255, 255,0.8);
+  background: url("../../images/home/bg-light.png"), rgba(255, 255, 255, 0.8);
 }
