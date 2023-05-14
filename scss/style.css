@@ -341,11 +341,14 @@ a {
 }
 .sect .cources__card {
   display: block;
-  padding: 10px 40px;
+  padding: 20px 40px;
   border: 1px solid #607987;
   border-radius: 4px;
   transition-delay: 1s;
   transition: 3s all;
+}
+.sect .cources__card h5 {
+  margin-bottom: 13px;
 }
 .sect .cources__card:hover {
   background: hsl(0deg, 0%, 100%);
