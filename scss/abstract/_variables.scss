@@ -1,0 +1,92 @@
+$bg-main-color: #1E1E1E;
+$bg-secondary-color: #111317a9;
+$primary-color: linear-gradient(96.96deg, rgba(0, 40, 248, 0.89) -0.76%, #6911AD 100%);
+$secondary-color: #fff;
+$tab-color: linear-gradient(93.5deg, #1E11AD 12.37%, rgba(105, 17, 173, 0.95) 85.28%);
+$shadow-color: rgba(0, 0, 0, 0.87);
+$border-color: #4E4E4E;
+$carousel-bg-color: rgba(14, 16, 20, 0.9);
+$btn-color: #6911AD;
+$purple:#5454D4;
+$nav-color: rgba(23, 25, 29, 0.7);
+$gray:#AAAAAA;
+$form-drink-bg: rgba(83, 83, 83, 0.1);
+$form-drink-shedow: rgba(241, 216, 253, 0.08);
+
+
+body.light{
+   
+    *{
+        color: #000 !important;
+
+    }
+    .navbar{
+        background: rgba(23, 25, 29, 0.1) !important;
+        &-brand{
+            img{
+                content: url('../../images/navbar/dark-logo.svg');
+            }
+        }
+        &-link{
+            &:hover{
+                color: #6911AD !important;
+            }
+        }
+        &__right{
+            &-mode{
+            background-color: #fff;
+            .mode-btn.active{
+            i{
+                color: #fff !important;
+            }
+            }
+        }
+        &-call{
+            color: #fff !important;
+            &:hover{
+                color: #6911AD !important;
+            }
+        }}
+    }
+    .navbar-shrink{
+        background-color: rgba(0, 0, 0,0.3) !important;
+    }
+    @media (max-width:1200px){
+        .navbar{
+            .offcanvas{
+                background: rgba(243, 243, 243, 0.5) !important;
+            }
+        }
+    }
+    .card{
+        background: rgba(243, 243, 243, 0.5) !important;
+        &-content{
+            background: rgba(255,255,255, 0.9) !important;
+        }
+    }
+    .services{
+        &__container{
+            background-color:rgba(243, 243, 243, 0.5) !important;
+        }
+    }
+    .form,.footer{
+        background: rgba(255,255,255, 0.9) !important;
+    }
+    .news{
+        background: url('../../images/news/top-line-light.png') center 533px,url('../../images/news/bottom-line-light.png') center 1923px;
+        background-repeat: no-repeat;
+        background-size: 100%;       
+        &__bottom,&__card{
+            background: rgba(255, 255, 255, 0.9) !important;
+        }
+    }
+    .footer{
+        &__logo{
+            img{
+                content: url('../../images/footer/footer-dark.svg');
+            }
+        }
+    }
+
+    background:url('../../images/home/bg-light.png'),rgba(255, 255, 255,0.8);
+}

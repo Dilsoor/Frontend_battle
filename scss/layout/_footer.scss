@@ -1,0 +1,65 @@
+@use "../abstract/variables" as var;
+@use "../abstract/mixin" as mixin;
+.footer {
+  padding: 82px 0;
+  background: rgba(14, 16, 20, 0.9);
+  border-top: 1px solid #4e4e4e;
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+  border-radius: 20px 20px 0px 0px;
+  * {
+    color: var.$secondary-color;
+    &:hover{
+      transition: .3s;
+      color: var.$purple;
+    }
+    &:active{
+      transition: .3s;
+      color: var.$purple;
+    }
+  }
+
+  &__logo {
+    @include mixin.flex-box(row, center, center);
+    img {
+      width: 158px;
+    }
+  }
+  &__location {
+    @include mixin.flex-box(row, center, center);
+    gap: 15px;
+    p {
+      margin: 0;
+      font-family: Proxima Nova;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 25px;
+    }
+    i {
+      font-size: 30px;
+    }
+  }
+  &__call {
+    @include mixin.flex-box(column, center, center);
+    gap: 25px;
+    p {
+      @include mixin.flex-box(row, center, center);
+      gap: 14px;
+      margin: 0;
+      font-family: Proxima Nova;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.06em;
+    }
+    
+  }
+  &__link {
+    @include mixin.flex-box(row, center, center);
+    gap: 32.5px;
+    i {
+      font-size: 25px;
+    }
+  }
+}
