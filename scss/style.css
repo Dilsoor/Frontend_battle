@@ -139,8 +139,52 @@ body.light .footer__logo img {
   font-size: 40px;
   line-height: 46px;
 }
-.header__texts h1 span {
+.header__texts h1 .span {
   color: #ba8d5b;
+  display: block;
+  position: absolute;
+  left: 195px;
+  top: 250px;
+  margin-bottom: 12px;
+  opacity: 0;
+  animation-name: animation;
+  animation-iteration-count: infinite;
+  animation-duration: 13s;
+}
+.header__texts h1 .span1 {
+  animation-delay: 1;
+}
+.header__texts h1 .span2 {
+  animation-delay: 4s;
+}
+.header__texts h1 .span3 {
+  animation-delay: 7s;
+}
+.header__texts h1 .span4 {
+  animation-delay: 10s;
+}
+.header__texts h1 .block {
+  display: block;
+  position: static;
+  opacity: 0;
+}
+@keyframes animation {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  30% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
 }
 .header__texts p {
   font-weight: 600;
@@ -158,4 +202,6 @@ body.light .footer__logo img {
   padding: 13px 46px;
   margin-top: 80px;
   margin-bottom: 60px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

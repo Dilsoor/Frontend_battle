@@ -60,7 +60,6 @@
       position: absolute;
       right: -128px;
       bottom: 0;
-      //   z-index: -2;
     }
   }
   &__texts {
@@ -74,8 +73,53 @@
       font-weight: 700;
       font-size: 40px;
       line-height: 46px;
-      span {
+      .span {
         color: var.$btn-color;
+        display: block;
+        position: absolute;
+        left: 195px;
+        top: 250px;
+        margin-bottom: 12px;
+        opacity: 0;
+        animation-name: animation;
+        animation-iteration-count: infinite;
+        animation-duration: 13s;
+      }
+      .span1 {
+        animation-delay: 1;
+      }
+      .span2 {
+        animation-delay: 4s;
+      }
+      .span3 {
+        animation-delay: 7s;
+      }
+      .span4 {
+        animation-delay: 10s;
+      }
+      .block {
+        display: block;
+        position: static;
+        opacity: 0;
+      }
+
+      @keyframes animation {
+        0% {
+          transform: translateY(-10px);
+          opacity: 0;
+        }
+        10% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+        20% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+        30% {
+          transform: translateY(10px);
+          opacity: 0;
+        }
       }
     }
     p {
