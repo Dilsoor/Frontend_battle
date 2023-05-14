@@ -39,9 +39,9 @@
         border-radius: 100px;
         background-color: #fff;
         border: 1px solid #fff;
-        transition: .3s;
-        &:hover{
-            border: 1px solid var.$btn-color;
+        transition: 0.3s;
+        &:hover {
+          border: 1px solid var.$btn-color;
         }
       }
       .mode-btn {
@@ -92,6 +92,9 @@
         animation-name: animation;
         animation-iteration-count: infinite;
         animation-duration: 13s;
+        b {
+          color: black;
+        }
       }
       .span1 {
         animation-delay: 1;
@@ -146,8 +149,8 @@
       padding: 13px 46px;
       margin-top: 80px;
       margin-bottom: 60px;
-      transition: .3s;
-      &:hover{
+      transition: 0.3s;
+      &:hover {
         background-color: #fff;
         color: black;
       }
@@ -157,7 +160,7 @@
 
 .footer {
   background-color: var.$bg-secondary-color;
-  padding: 26px 0 60px;
+  padding: 26px 0 50px;
   .container {
     display: grid;
     grid-template-columns: 30% 70%;
@@ -168,11 +171,18 @@
     line-height: 20px;
   }
   &__left {
+    p {
+      margin-top: 22px;
+    }
     &-bottom {
-      margin-top: 68px;
+      margin-top: 58px;
+      p {
+        margin-top: 0;
+      }
     }
   }
   &__right {
+    padding-top: 10px;
     &-wrap {
       display: flex;
       justify-content: space-between;
@@ -196,7 +206,7 @@
       p {
         margin-top: 16px;
       }
-      .icons{
+      .icons {
         display: flex;
         gap: 12px;
         margin-top: 16px;
@@ -208,5 +218,83 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 22px;
+  }
+}
+
+.section_videos {
+  margin-top: 88px;
+  h2 {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 24px;
+  }
+  &__wrap {
+    margin-top: 48px;
+    padding: 0 10px 90px;
+    display: flex;
+    justify-content: space-between;
+    &-content {
+      position: relative;
+      .filter {
+        position: absolute;
+        padding: 12px;
+        width: 232px;
+        height: 412px;
+        top: 6px;
+        left: 6px;
+        border-radius: 22px;
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(0, 0, 0, 0.37) 69.5%,
+          rgba(0, 0, 0, 0.65) 90.34%
+        );
+        button {
+          padding: 6px;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          background-color: #fff;
+          border: none;
+          border-radius: 100px;
+        }
+      }
+      .filter-none{
+        background: none;
+      }
+      &-text {
+        margin-top: 280px;
+        color: #fff;
+        font-weight: 600;
+        .date {
+          font-size: 12px;
+          line-height: 22px;
+        }
+        .job {
+          color: var.$green;
+          font-size: 12px;
+          line-height: 22px;
+        }
+        .fullname {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+      // &:active{
+      //   border: 1px solid;
+      // }
+      video {
+        width: 244px;
+        height: 420px;
+        border-radius:25px;
+      }
+    }
   }
 }
