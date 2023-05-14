@@ -486,7 +486,7 @@ a {
 }
 .sect .cources {
   padding: 48px 0;
-  background: #F9F8F7;
+  background: #F1F0EE;
 }
 .sect .cources__wrapper {
   display: flex;
@@ -498,8 +498,8 @@ a {
   padding: 20px 40px;
   border: 1px solid #607987;
   border-radius: 4px;
-  transition-delay: 1s;
-  transition: 3s all;
+  transition-delay: 0.5s;
+  transition: 2s all;
 }
 .sect .cources__card h5 {
   margin-bottom: 13px;
