@@ -258,7 +258,18 @@
 
   </section>
 </div>
-  <script type="module" src="./main.js"></script>
+  <script type="module" src="../Frontend_battle/main.js"></script>
+  <script>
+    let myElements = document.querySelectorAll(".rests");
+let myButton = document.getElementById("Adv-show");
+
+myButton.addEventListener("click", function() {
+    myElements.forEach(function(element) {
+      element.classList.toggle("hidden");
+    });
+    myButton.innerHTML = "Qisqartirish"
+});
+  </script>
 </body>
 
 </html>
