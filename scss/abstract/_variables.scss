@@ -1,15 +1,14 @@
-$bg-main-color: #1E1E1E;
-$bg-secondary-color: #111317a9;
-$primary-color: linear-gradient(96.96deg, rgba(0, 40, 248, 0.89) -0.76%, #6911AD 100%);
+$bg-main-color: #F1F0EE;
+$bg-secondary-color: #F9F8F7;
+$text-color:  #0EB182;
 $secondary-color: #fff;
-$tab-color: linear-gradient(93.5deg, #1E11AD 12.37%, rgba(105, 17, 173, 0.95) 85.28%);
-$shadow-color: rgba(0, 0, 0, 0.87);
-$border-color: #4E4E4E;
-$carousel-bg-color: rgba(14, 16, 20, 0.9);
-$btn-color: #6911AD;
-$purple:#5454D4;
+$tab-color: #F7F7F5;
+$label-color: #4E4E4E;
+$input-color: rgba(14, 16, 20, 0.9);
+$btn-color:#BA8D5B  ;
+$footer-text:#607987;
 $nav-color: rgba(23, 25, 29, 0.7);
-$gray:#AAAAAA;
+$green:#7CD1AC;
 $form-drink-bg: rgba(83, 83, 83, 0.1);
 $form-drink-shedow: rgba(241, 216, 253, 0.08);
 
@@ -71,14 +70,6 @@ body.light{
     }
     .form,.footer{
         background: rgba(255,255,255, 0.9) !important;
-    }
-    .news{
-        background: url('../../images/news/top-line-light.png') center 533px,url('../../images/news/bottom-line-light.png') center 1923px;
-        background-repeat: no-repeat;
-        background-size: 100%;       
-        &__bottom,&__card{
-            background: rgba(255, 255, 255, 0.9) !important;
-        }
     }
     .footer{
         &__logo{
