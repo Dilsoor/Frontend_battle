@@ -27,6 +27,9 @@ body.night b,
 body.night p {
   color: #fff;
 }
+body.night .info h4 {
+  color: #fff;
+}
 body.night .cources__card h5 {
   color: #fff;
 }
@@ -42,6 +45,9 @@ body.night .header {
 }
 body.night .advantages {
   background-color: #1E1E1E;
+}
+body.night .advantages .show-more {
+  color: #0EB182 !important;
 }
 body.night .sect__p {
   color: #607987;

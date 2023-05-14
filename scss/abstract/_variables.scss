@@ -36,6 +36,11 @@ body.night {
   p {
     color: #fff;
   }
+  .info{
+    h4{
+      color: #fff;
+    }
+  }
   .cources__card{
     h5{
       color: #fff;
@@ -53,6 +58,9 @@ body.night {
   }
   .advantages{
     background-color: #1E1E1E;
+    .show-more{
+      color: #0EB182 !important;
+    }
   }
   .sect__p{
     color: #607987;
