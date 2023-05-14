@@ -385,4 +385,10 @@ a {
   padding: 16px 12px;
   background: #F9F8F7;
   border-radius: 8px;
+}
+.sect .workplace__box img {
+  filter: grayscale(1);
+}
+.sect .workplace__box:hover img {
+  filter: none;
 }/*# sourceMappingURL=style.css.map */

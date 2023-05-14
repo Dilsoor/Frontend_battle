@@ -185,6 +185,12 @@ a {
             padding: 16px 12px;
             background: #F9F8F7;
             border-radius: 8px;
+            img{
+                filter: grayscale(1);
+            }
+            &:hover img{
+                filter: none;
+            }
         }
     }
 }
