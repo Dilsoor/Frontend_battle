@@ -1,2 +1,143 @@
 @use "../abstract/variables" as var;
 
+.header-top {
+  position: fixed;
+  z-index: 3;
+  width: 100vw;
+}
+
+.navbar {
+  background-color: var.$bg-main-color;
+  padding: 20px 0;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    nav {
+      display: flex;
+      gap: 35px;
+      align-items: center;
+      ul {
+        list-style: none;
+        display: flex;
+        gap: 35px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+      }
+      button {
+        display: flex;
+        align-items: center;
+        text-align: center;
+      }
+      .kirish-btn {
+        padding: 11px 50px;
+        border-radius: 100px;
+        background-color: #fff;
+        border: 1px solid #fff;
+      }
+      .mode-btn {
+        padding: 12px;
+        border-radius: 50%;
+        border: none;
+        background-color: #f5f5f5;
+      }
+    }
+  }
+}
+
+.header {
+  background-color: var.$bg-main-color;
+  position: relative;
+  background-image: url(../../images/png/header-bg.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 540px 160px;
+  overflow: hidden;
+  &__wrap {
+    padding-top: 183px;
+    .hero {
+      position: absolute;
+      right: -128px;
+      bottom: 0;
+    }
+  }
+  &__texts {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+    h1 {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 46px;
+      .span {
+        color: var.$btn-color;
+        display: block;
+        position: absolute;
+        left: 195px;
+        top: 250px;
+        margin-bottom: 12px;
+        opacity: 0;
+        animation-name: animation;
+        animation-iteration-count: infinite;
+        animation-duration: 13s;
+      }
+      .span1 {
+        animation-delay: 1;
+      }
+      .span2 {
+        animation-delay: 4s;
+      }
+      .span3 {
+        animation-delay: 7s;
+      }
+      .span4 {
+        animation-delay: 10s;
+      }
+      .block {
+        display: block;
+        position: static;
+        opacity: 0;
+      }
+
+      @keyframes animation {
+        0% {
+          transform: translateY(-10px);
+          opacity: 0;
+        }
+        10% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+        20% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+        30% {
+          transform: translateY(10px);
+          opacity: 0;
+        }
+      }
+    }
+    p {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      color: var.$footer-text;
+    }
+    button {
+      font-size: 16px;
+      line-height: 22px;
+      color: #fff;
+      background-color: var.$btn-color;
+      border: 1px solid var.$btn-color;
+      border-radius: 100px;
+      padding: 13px 46px;
+      margin-top: 80px;
+      margin-bottom: 60px;
+    }
+  }
+}
