@@ -20,71 +20,65 @@ $form-drink-shedow: rgba(241, 216, 253, 0.08);
   font-family: "Lato", sans-serif;
 }
 
-body.light {
+body.night {
   * {
-    color: #000 !important;
+    color: #000;
   }
   .navbar {
-    background: rgba(23, 25, 29, 0.1) !important;
-    &-brand {
-      img {
-        content: url("../../images/navbar/dark-logo.svg");
-      }
-    }
-    &-link {
-      &:hover {
-        color: #6911ad !important;
-      }
-    }
-    &__right {
-      &-mode {
-        background-color: #fff;
-        .mode-btn.active {
-          i {
-            color: #fff !important;
-          }
-        }
-      }
-      &-call {
-        color: #fff !important;
-        &:hover {
-          color: #6911ad !important;
-        }
-      }
+    background: #0f1826 !important;
+    a {
+      color: #fff !important;
     }
   }
-  .navbar-shrink {
-    background-color: rgba(0, 0, 0, 0.3) !important;
+  h1,
+  h2,
+  b,
+  p {
+    color: #fff;
   }
-  @media (max-width: 1200px) {
-    .navbar {
-      .offcanvas {
-        background: rgba(243, 243, 243, 0.5) !important;
-      }
+  .cources__card{
+    h5{
+      color: #fff;
+    }
+    &:hover h5{
+      color: #000;
     }
   }
-  .card {
-    background: rgba(243, 243, 243, 0.5) !important;
-    &-content {
-      background: rgba(255, 255, 255, 0.9) !important;
+  button{
+    color: #000;
+  }
+  .header {
+    background-color: #09111b;
+    background-image: url(../../images/svg/bg-hero-inightsvg.png);
+  }
+  .advantages{
+    background-color: #1E1E1E;
+  }
+  .sect__p{
+    color: #607987;
+  }
+  .cources{
+    background-color: #09111B;
+  }
+  .workplace{
+    background-color: #021923;
+    p{
+      color: #fff;
     }
   }
-  .services {
-    &__container {
-      background-color: rgba(243, 243, 243, 0.5) !important;
+  .section_videos{
+    background-color: #021923;
+    .date, .fullname, button{
+      color: #fff;
+    }
+    button{
+      background-color: #000;
     }
   }
-  .form,
-  .footer {
-    background: rgba(255, 255, 255, 0.9) !important;
-  }
-  .footer {
-    &__logo {
-      img {
-        content: url("../../images/footer/footer-dark.svg");
-      }
+  .footer{
+    background: #0F1826;
+    li, &__title{
+      color: #fff;
     }
   }
-
-  background: url("../../images/home/bg-light.png"), rgba(255, 255, 255, 0.8);
 }

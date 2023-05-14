@@ -12,56 +12,63 @@
   font-family: "Lato", sans-serif;
 }
 
-body.light {
-  background: url("../../images/home/bg-light.png"), rgba(255, 255, 255, 0.8);
+body.night * {
+  color: #000;
 }
-body.light * {
-  color: #000 !important;
+body.night .navbar {
+  background: #0f1826 !important;
 }
-body.light .navbar {
-  background: rgba(23, 25, 29, 0.1) !important;
-}
-body.light .navbar-brand img {
-  content: url("../../images/navbar/dark-logo.svg");
-}
-body.light .navbar-link:hover {
-  color: #6911ad !important;
-}
-body.light .navbar__right-mode {
-  background-color: #fff;
-}
-body.light .navbar__right-mode .mode-btn.active i {
+body.night .navbar a {
   color: #fff !important;
 }
-body.light .navbar__right-call {
-  color: #fff !important;
+body.night h1,
+body.night h2,
+body.night b,
+body.night p {
+  color: #fff;
 }
-body.light .navbar__right-call:hover {
-  color: #6911ad !important;
+body.night .cources__card h5 {
+  color: #fff;
 }
-body.light .navbar-shrink {
-  background-color: rgba(0, 0, 0, 0.3) !important;
+body.night .cources__card:hover h5 {
+  color: #000;
 }
-@media (max-width: 1200px) {
-  body.light .navbar .offcanvas {
-    background: rgba(243, 243, 243, 0.5) !important;
-  }
+body.night button {
+  color: #000;
 }
-body.light .card {
-  background: rgba(243, 243, 243, 0.5) !important;
+body.night .header {
+  background-color: #09111b;
+  background-image: url(../../images/svg/bg-hero-inightsvg.png);
 }
-body.light .card-content {
-  background: rgba(255, 255, 255, 0.9) !important;
+body.night .advantages {
+  background-color: #1E1E1E;
 }
-body.light .services__container {
-  background-color: rgba(243, 243, 243, 0.5) !important;
+body.night .sect__p {
+  color: #607987;
 }
-body.light .form,
-body.light .footer {
-  background: rgba(255, 255, 255, 0.9) !important;
+body.night .cources {
+  background-color: #09111B;
 }
-body.light .footer__logo img {
-  content: url("../../images/footer/footer-dark.svg");
+body.night .workplace {
+  background-color: #021923;
+}
+body.night .workplace p {
+  color: #fff;
+}
+body.night .section_videos {
+  background-color: #021923;
+}
+body.night .section_videos .date, body.night .section_videos .fullname, body.night .section_videos button {
+  color: #fff;
+}
+body.night .section_videos button {
+  background-color: #000;
+}
+body.night .footer {
+  background: #0F1826;
+}
+body.night .footer li, body.night .footer__title {
+  color: #fff;
 }
 
 .header-top {
@@ -307,7 +314,7 @@ body.light .footer__logo img {
 }
 
 .section_videos {
-  margin-top: 88px;
+  padding-top: 88px;
 }
 .section_videos h2 {
   font-weight: 800;
