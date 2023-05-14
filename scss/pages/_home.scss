@@ -24,6 +24,10 @@
         font-weight: 500;
         font-size: 16px;
         line-height: 22px;
+        a {
+          text-decoration: none;
+          color: black;
+        }
       }
       button {
         display: flex;
@@ -35,6 +39,10 @@
         border-radius: 100px;
         background-color: #fff;
         border: 1px solid #fff;
+        transition: .3s;
+        &:hover{
+            border: 1px solid var.$btn-color;
+        }
       }
       .mode-btn {
         padding: 12px;
@@ -58,7 +66,7 @@
     padding-top: 183px;
     .hero {
       position: absolute;
-      right: -128px;
+      right: -198px;
       bottom: 0;
     }
   }
@@ -138,6 +146,67 @@
       padding: 13px 46px;
       margin-top: 80px;
       margin-bottom: 60px;
+      transition: .3s;
+      &:hover{
+        background-color: #fff;
+        color: black;
+      }
     }
+  }
+}
+
+.footer {
+  background-color: var.$bg-secondary-color;
+  padding: 26px 0 60px;
+  .container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  &__left {
+    &-bottom {
+      margin-top: 68px;
+    }
+  }
+  &__right {
+    &-wrap {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 52px;
+      ul {
+        list-style: none;
+        color: var.$footer-text;
+        margin-top: 34px;
+        display: flex;
+        flex-direction: column;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 32px;
+      }
+    }
+    &-bottom {
+      border-top: 1px solid rgba(129, 117, 92, 0.3);
+      padding-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      p {
+        margin-top: 16px;
+      }
+      .icons{
+        display: flex;
+        gap: 12px;
+        margin-top: 16px;
+      }
+    }
+  }
+  p {
+    color: var.$footer-text;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
   }
 }

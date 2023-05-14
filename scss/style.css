@@ -91,6 +91,10 @@ body.light .footer__logo img {
   font-size: 16px;
   line-height: 22px;
 }
+.navbar__wrap nav ul a {
+  text-decoration: none;
+  color: black;
+}
 .navbar__wrap nav button {
   display: flex;
   align-items: center;
@@ -101,6 +105,10 @@ body.light .footer__logo img {
   border-radius: 100px;
   background-color: #fff;
   border: 1px solid #fff;
+  transition: 0.3s;
+}
+.navbar__wrap nav .kirish-btn:hover {
+  border: 1px solid #ba8d5b;
 }
 .navbar__wrap nav .mode-btn {
   padding: 12px;
@@ -123,7 +131,7 @@ body.light .footer__logo img {
 }
 .header__wrap .hero {
   position: absolute;
-  right: -128px;
+  right: -198px;
   bottom: 0;
 }
 .header__texts {
@@ -147,26 +155,51 @@ body.light .footer__logo img {
   top: 250px;
   margin-bottom: 12px;
   opacity: 0;
-  animation-name: animation;
-  animation-iteration-count: infinite;
-  animation-duration: 13s;
+  -webkit-animation-name: animation;
+          animation-name: animation;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 13s;
+          animation-duration: 13s;
 }
 .header__texts h1 .span1 {
-  animation-delay: 1;
+  -webkit-animation-delay: 1;
+          animation-delay: 1;
 }
 .header__texts h1 .span2 {
-  animation-delay: 4s;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
 }
 .header__texts h1 .span3 {
-  animation-delay: 7s;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
 }
 .header__texts h1 .span4 {
-  animation-delay: 10s;
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
 }
 .header__texts h1 .block {
   display: block;
   position: static;
   opacity: 0;
+}
+@-webkit-keyframes animation {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  30% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
 }
 @keyframes animation {
   0% {
@@ -202,6 +235,61 @@ body.light .footer__logo img {
   padding: 13px 46px;
   margin-top: 80px;
   margin-bottom: 60px;
+  transition: 0.3s;
+}
+.header__texts button:hover {
+  background-color: #fff;
+  color: black;
 }
 
-/*# sourceMappingURL=style.css.map */
+.footer {
+  background-color: #f9f8f7;
+  padding: 26px 0 60px;
+}
+.footer .container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+.footer__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+.footer__left-bottom {
+  margin-top: 68px;
+}
+.footer__right-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 52px;
+}
+.footer__right-wrap ul {
+  list-style: none;
+  color: #607987;
+  margin-top: 34px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 32px;
+}
+.footer__right-bottom {
+  border-top: 1px solid rgba(129, 117, 92, 0.3);
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__right-bottom p {
+  margin-top: 16px;
+}
+.footer__right-bottom .icons {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+.footer p {
+  color: #607987;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+}/*# sourceMappingURL=style.css.map */
